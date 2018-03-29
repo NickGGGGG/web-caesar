@@ -9,13 +9,14 @@ form = """
 <html>
     <head>
         <style>
-            form {background-color: red;
+            form {{
+                background-color: #eee;
                 padding: 20px;
                 margin: 0 auto;
                 width: 540px;
                 font: 16px sans-serif;
                 border-radius: 10px;
-            }
+            }}
             textarea {{
                 margin: 10px 0;
                 width: 540px;
@@ -25,7 +26,7 @@ form = """
     </head>
     <body>
         <!-- create your form here -->
-        <form action"/" method="post">
+        <form action"/", method="post">
             <lable>
                 Rotate by:
                 <input type="text" name="rot" value="0" />
